@@ -13,10 +13,10 @@
 
 ## How to Run:
 - Clone this project
-- Opwn the project with Java IDE
+- Open the project with Java IDE
 - Run the project
 
 
-## Webform URL:
+## Website URL:
 - https://magento.softwaretestingboard.com/
 
