@@ -1,4 +1,3 @@
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -19,8 +18,8 @@ public class LoginPage {
 
     @FindBy(className = "ui-menu-icon")
     List<WebElement> menuItems;
-    @FindBy(className = "item")
-    List<WebElement> Items;
+    @FindBy(xpath = "//a[contains(text(),\"Jackets\")]")
+    WebElement Item;
     @FindBy(className = "product-item-link")
     List<WebElement> productItem;
     @FindBy(className = "swatch-option")
@@ -43,14 +42,15 @@ public class LoginPage {
     }
 
     public void addToCart() throws InterruptedException {
-        menuItems.get(3).click();
+        menuItems.get(3).click();   //This will click the "Men" option from header
         Thread.sleep(2000);
-        Items.get(3).click();
-        productItem.get(0).click();
+        Item.click();    //This will click the "Jackets" option from sidebar options
+        productItem.get(0).click();  //This will click the first product item "Proteus Fitness Jackshirt" from the list
         Thread.sleep(3000);
-        size.get(1).click();
-        size.get(5).click();
-        addCartBtn.click();
+        size.get(1).click();  //This will click to select "size"
+        size.get(5).click();  //This will click to select "color"
+        addCartBtn.click();  // This will click to "Add to Cart" button to add the selected product
+
     }
 
 }
