@@ -1,7 +1,7 @@
 # Basic-Automated-Testing-using-Selenium
 
 ## About this Project
-### This is an automation project where I have automated a some components of a website. Here all tests were done by Selenium.
+### This is an automation project where I have automated some components of a website. Here all tests were done by Selenium.
 
 ## Tools & Technology used:
 - Selenium
